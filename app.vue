@@ -1,5 +1,5 @@
 <template>
-    <nav class="bg-blue-50 border-gray-200 dark:bg-gray-900">
+    <nav class="bg-blue-100 border-gray-200 dark:bg-gray-900">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-4 p-4">
             <a href="https://github.com/PenguLoader" class="flex items-center">
                 <nuxt-img src="/images/pengu.png" class="h-14 mr-3 rounded-lg" alt="Pengu Logo" />
@@ -25,9 +25,9 @@
         </div>
     </nav>
     <br>
-    <div id="container" class="flex dark-mode m-auto max-w-md">
+    <div id="container" class="flex m-auto max-w-md">
         <div class="grid gap-4 grid-flow-col self-center">
-            <div class="backdrop-brightness-75 w-fit inline-block rounded-t-lg">
+            <div class="w-fit inline-block rounded-t-lg dark:dark:bg-gray-800 bg-blue-200">
                 <nuxt-img src="/images/1.jpg" alt="Image 1" width="300px" class="m-0 rounded-t-lg"/>
                 <div class="rounded-b-lg p-2 border-t-black border-t-2">
                     <h1 class="text-2xl text-center m-2">Image 1</h1>
@@ -42,8 +42,6 @@
 <script setup>
 
 const colorMode = useColorMode()
-
-console.log(colorMode.preference)
 
 </script>
 <style>
