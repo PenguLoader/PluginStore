@@ -5,8 +5,11 @@ export default defineNuxtConfig({
         '@nuxtjs/google-fonts',
         '@nuxt/image-edge',
         '@nuxtjs/color-mode',
-        '@tailvue/nuxt',
+        'nuxt-icon',
 ],
+    colorMode: {
+        classSuffix: ''
+    },
     tailwindcss: {
         // Options
     },
