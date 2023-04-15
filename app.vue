@@ -13,11 +13,9 @@
                 <ul class="flex flex-col md:flex-row md:items-center md:justify-between">
                     <li class="flex flex-col md:flex-row md:items-center md:justify-between">
                         <client-only>
-                    <button>
-                        <Icon name="wi:moon-full" class="w-12 h-12" id="lightswitch" @click="
-                        useColorMode().value === 'dark' ? useColorMode().value = 'light' : useColorMode().value = 'dark'"
-                        />
-                    </button>
+                            <button>
+                                <Icon name="wi:moon-full" class="w-12 h-12" id="lightswitch" @click="colorStates"/>
+                            </button>
                         </client-only>
                     </li>
                 </ul>
@@ -40,8 +38,23 @@
     </footer>
 </template>
 <script setup>
+const colorMode = useColorMode();
 
-const colorMode = useColorMode()
+// default value of $colorMode.preference
+colorMode.preference = 'system';
+
+// check if color mode is set in local storage
+if(process.client) {
+    colorMode.preference = localStorage.getItem('nuxt-color-mode') || 'light';
+}
+
+function colorStates() {
+// save color to local storage
+    colorMode.preference === 'light' ? colorMode.preference = 'dark' : colorMode.preference = 'light';
+    localStorage.setItem('nuxt-color-mode', colorMode.preference);
+}
+
+
 
 </script>
 <style>

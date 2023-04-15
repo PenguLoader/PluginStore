@@ -17,5 +17,8 @@
     "nuxt": "^3.4.1",
     "nuxt-icon": "^0.3.3",
     "tailvue": "^0.1.68"
+  },
+  "dependencies": {
+    "@vueuse/core": "^10.0.2"
   }
 }
