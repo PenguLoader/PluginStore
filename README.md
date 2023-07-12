@@ -1,30 +1,75 @@
-# SolidStart
+PluginStore
+===
+The Official Pengu Plugin Store.
 
-Everything you need to build a Solid project, powered by [`solid-start`](https://start.solidjs.com);
-
-## Creating a project
-
-```bash
-# create a new project in the current directory
-npm init solid@latest
-
-# create a new project in my-app
-npm init solid@latest my-app
-```
+### Features
+- [x] Nuxt3 design, powered by [SolidStart].
+- [x] Awesome collection of plugins and themes.
+- [ ] Easy installation with a single click.
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+> You have to learn [SolidJS](https://www.solidjs.com/) and [SolidStart](https://start.solidjs.com/getting-started/what-is-solidstart) to contribute to this project.
 
-```bash
-npm run dev
+> Also **NodeJS 16+** and **pnpm** are required to build and run this project.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+Before you start, let's create an `.env` file with your GitHub's personal access token.
+
+```
+GITHUB_PAT="your-token"
+```
+
+Then install dependencies and start development:
+
+```
+pnpm install
+pnpm dev
+```
+
+To add a new plugin, just update the `registry/plugins.yml`
+```yaml
+plugins:
+  ...
+  - name: Your awesome plugin
+    slug: your-awesome-plugin
+    description: ...
+    # should follow the existing plugins
+  ... 
 ```
 
 ## Building
 
-Solid apps are built with _adapters_, which optimise your project for deployment to different environments.
+Build production:
 
-By default, `npm run build` will generate a Node app that you can run with `npm start`. To use a different adapter, add it to the `devDependencies` in `package.json` and specify in your `vite.config.js`.
+```
+pnpm build
+```
+
+Run production:
+
+```
+pnpm start
+```
+
+## Deploying
+
+### Vercel
+
+Check out this guide: https://vercel.com/guides/deploying-solid-with-vercel
+
+### Deno Deploy
+
+To deploy on Deno Deploy, you have to install [Deno](https://deno.land/) and [deployctl](https://github.com/denoland/deployctl).
+
+1. Add your Deno Deploy token to `.env`
+
+```
+DENO_DEPLOY_TOKEN="your-token"
+```
+
+2. Create a new project with name "plugin-store" and run:
+
+```
+pnpm build --deno
+pnpm run deploy
+```
