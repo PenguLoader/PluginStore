@@ -1,0 +1,206 @@
+---
+name: Pengu Plugin Store registry
+version: 0.0.1
+plugins:
+  - name: Balance buff viewer
+    slug: balance-buff-viewer
+    description: Game modes' balance buffs/nerfs viewer.
+    image:
+      data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
+      viewBox='0 0 24 24' stroke-width='2' stroke='%2300BD6F' fill='%2300BD6F' stroke-linecap='round'
+      stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath
+      d='M3 8l4 -4l4 4'%3E%3C/path%3E%3Cpath d='M7 4l0 9'%3E%3C/path%3E%3Cpath d='M13
+      16l4 4l4 -4'%3E%3C/path%3E%3Cpath d='M17 10l0 10'%3E%3C/path%3E%3C/svg%3E
+    repo: https://github.com/nomi-san/balance-buff-viewer
+    discord: https://discord.com/channels/1069483280438673418/1127199847901052979
+    author:
+      name: Nomi
+      github: nomi-san
+    auto_update: true
+    tags: [utility, ui]
+
+  - name: Permaban
+    slug: permaban
+    description: Your account is permanently suspended. A fake ban alert help you to quit LoL.
+    image: data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' stroke-width='2' stroke='%2300BD6F' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M9.103 2h5.794a3 3 0 0 1 2.122 .879l4.101 4.1a3 3 0 0 1 .88 2.125v5.794a3 3 0 0 1 -.879 2.122l-4.1 4.101a3 3 0 0 1 -2.123 .88h-5.795a3 3 0 0 1 -2.122 -.88l-4.101 -4.1a3 3 0 0 1 -.88 -2.124v-5.794a3 3 0 0 1 .879 -2.122l4.1 -4.101a3 3 0 0 1 2.125 -.88z'%3E%3C/path%3E%3Cpath d='M12 8v4'%3E%3C/path%3E%3Cpath d='M12 16h.01'%3E%3C/path%3E%3C/svg%3E
+    repo: https://github.com/nomi-san/permaban-plugin
+    author:
+      name: Nomi
+      github: nomi-san
+    auto_update: true
+    tags: [fun, ui]
+
+  - name: Skin randomizer
+    slug: skin-randomizer
+    description: Don't know which skin to choose? Let it be random.
+    image:
+      data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
+      viewBox='0 0 24 24' stroke-width='2' stroke='%2300BD6F' fill='none' stroke-linecap='round'
+      stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath
+      d='M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0'%3E%3C/path%3E%3Cpath d='M6 21v-2a4 4 0 0
+      1 4 -4h3.5'%3E%3C/path%3E%3Cpath d='M19 22v.01'%3E%3C/path%3E%3Cpath d='M19 19a2.003
+      2.003 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483'%3E%3C/path%3E%3C/svg%3E
+    repo: https://github.com/DmitryFisk/pengu-skin-randomizer
+    author:
+      name: AxiFisk
+      github: DmitryFisk
+    tags: [fun, tweakble, ui, utility]
+
+  - name: Auto ban pick
+    slug: auto-ban-pick
+    description: Pick and ban automatically, with backup options!
+    image: data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' stroke-width='2' stroke='%2300BD6F' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z'%3E%3C/path%3E%3Cpath d='M9 11l3 3l3 -3'%3E%3C/path%3E%3C/svg%3E
+    repo: https://github.com/controlado/auto-champion-select
+    author:
+      name: Balaclava
+      github: controlado
+    tags: [fun, utility]
+
+  - name: Refund last purchase
+    slug: refund-last-purchase
+    description: Play with a champion for free!
+    image:
+      data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'
+      viewBox='0 0 24 24' stroke-width='2' stroke='%2300BD6F' fill='none' stroke-linecap='round'
+      stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath
+      d='M9 14c0 1.657 2.686 3 6 3s6 -1.343 6 -3s-2.686 -3 -6 -3s-6 1.343 -6 3z'%3E%3C/path%3E%3Cpath
+      d='M9 14v4c0 1.656 2.686 3 6 3s6 -1.344 6 -3v-4'%3E%3C/path%3E%3Cpath d='M3 6c0
+      1.072 1.144 2.062 3 2.598s4.144 .536 6 0c1.856 -.536 3 -1.526 3 -2.598c0 -1.072
+      -1.144 -2.062 -3 -2.598s-4.144 -.536 -6 0c-1.856 .536 -3 1.526 -3 2.598z'%3E%3C/path%3E%3Cpath
+      d='M3 6v10c0 .888 .772 1.45 2 2'%3E%3C/path%3E%3Cpath d='M3 11c0 .888 .772 1.45
+      2 2'%3E%3C/path%3E%3C/svg%3E
+    repo: https://github.com/controlado/refund-last-purchase
+    author:
+      name: Balaclava
+      github: controlado
+    tags: [fun, utility]
+
+  - name: Listening status
+    slug: listening-status
+    description: Sync your status with current Spotify listening song.
+    image:
+      data:image/svg+xml,%3Csvg role='img' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'
+      fill='%2300BD6F'%3E%3Cpath d='M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66
+      0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9
+      4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6
+      9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16
+      5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02
+      15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z'/%3E%3C/svg%3E
+    repo: https://github.com/iIlusion/league-loader-plugins/tree/main/ListeningStatus
+    readme: readme.md
+    author:
+      name: Lx
+      github: iIlusion
+    tags: [utility, spotify]
+
+  - name: Name Spoofer
+    slug: name-spoofer
+    description: Spoof your name throughout the entirety of the client.
+    image: data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' stroke-width='2' stroke='%2300BD6F' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M3 17c3.333 -3.333 5 -6 5 -8c0 -3 -1 -3 -2 -3s-2.032 1.085 -2 3c.034 2.048 1.658 4.877 2.5 6c1.5 2 2.5 2.5 3.5 1l2 -3c.333 2.667 1.333 4 3 4c.53 0 2.639 -2 3 -2c.517 0 1.517 .667 3 2'%3E%3C/path%3E%3C/svg%3E
+    repo: https://github.com/iIlusion/league-loader-plugins/tree/main/NameSpoofer
+    readme: readme.md
+    author:
+      name: Lx
+      github: iIlusion
+    tags: [fun, utility]
+
+  - name: Bench Killer
+    slug: bench-killer
+    description: No swap cooldown in ARAM.
+    image: data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' stroke-width='2' stroke='%2300BD6F' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'%3E%3C/path%3E%3Cpath d='M3 12v.01'%3E%3C/path%3E%3Cpath d='M7.5 19.8v.01'%3E%3C/path%3E%3Cpath d='M4.2 16.5v.01'%3E%3C/path%3E%3Cpath d='M4.2 7.5v.01'%3E%3C/path%3E%3Cpath d='M12 21a8.994 8.994 0 0 0 6.362 -2.634m1.685 -2.336a9 9 0 0 0 -8.047 -13.03'%3E%3C/path%3E%3Cpath d='M3 3l18 18'%3E%3C/path%3E%3C/svg%3E
+    repo: BakaFT/BenchKiller/
+    author:
+      name: BakaFT
+      github: BakaFT
+    tags: [utility]
+
+  - name: Cute theme
+    slug: cute-theme
+    theme: true
+    description: A minimalist launcher theme.
+    image: https://raw.githubusercontent.com/PrincessAkira/league-launcher-theme/main/Img/PDHdfhl.png
+    repo: https://github.com/PrincessAkira/league-launcher-theme/tree/main/Cute
+    author:
+      name: Sarah
+      github: PrincessAkira
+    tags: [theme, tweakble]
+
+  - name: Ahri theme
+    slug: ahri-theme
+    theme: true
+    description: Spirit Blossom Ahri theme.
+    image: https://camo.githubusercontent.com/217b287d427c3ce8f14a956b04a9ae2615e98d2787136f78a55df44558c39505/68747470733a2f2f692e696d6775722e636f6d2f74617a504e484e2e706e67
+    repo: https://github.com/nomi-san/ahri-theme
+    author:
+      name: Yuzuru
+      github: Yuzuru10
+    tags: [theme, ahri]
+
+  - name: Purple theme
+    slug: purple-theme
+    theme: true
+    description: A purple flavored theme.
+    image: https://i.imgur.com/Ernja8o.png
+    repo: https://github.com/floyare/league-purple-theme
+    author:
+      name: Floyare
+      github: floyare
+    tags: [fun, theme, purple]
+
+  - name: Irelia theme
+    slug: irelia-theme
+    theme: true
+    description: Spirit Blossom Irelia theme.
+    image: https://user-images.githubusercontent.com/59478113/212546987-b21ebd93-8cad-4c23-a444-521647f3e6fa.png
+    repo: https://github.com/rumi-chan/LeagueThemes/tree/main/Irelia-theme
+    author:
+      name: Rumi
+      github: rumi-chan
+    tags: [theme, irelia]
+
+  - name: ElainaV3
+    slug: elaina-theme
+    theme: true
+    description: An anime flavored theme.
+    image: https://w0.peakpx.com/wallpaper/950/395/HD-wallpaper-anime-the-journey-of-elaina-elaina-the-journey-of-elaina.jpg
+    repo: https://github.com/Elaina69/Elaina-V3
+    author:
+      name: Elaina69
+      github: Elaina69
+    auto_update: true
+    tags: [anime, theme, ui, utility, tweakble, customizable]
+
+  - name: Pure black theme
+    slug: pure-black-theme
+    theme: true
+    description: Just a pure black theme.
+    image: https://i.imgur.com/ZnzJNI9.png
+    repo: https://github.com/oMaikeru/pure-black-theme
+    author:
+      name: Maikeru
+      github: oMaikeru
+      discord: maikeruwastaken
+    tags: [theme, black]
+
+  - name: Rem theme
+    slug: rem-theme
+    theme: true
+    description: A pretty animated theme.
+    image: https://i.imgur.com/yMQXBu4.png
+    repo: https://github.com/teisseire117/league-loader-plugins
+    author:
+      name: Lyfhael
+      github: teisseire117
+      discord: lyfhael
+    tags: [anime, theme]
+
+  - name: Acrylical Theme
+    slug: acrylical-theme
+    theme: true
+    image: https://i.imgur.com/cjDdkQK.png
+    description: A minimalist theme that supports transparency effect.
+    repo: https://github.com/PrincessAkira/league-launcher-theme/tree/main/Acrylical
+    author:
+      name: Sarah
+      github: PrincessAkira
+    tags: [acrylic, transparency, theme]
