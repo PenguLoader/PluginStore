@@ -10,11 +10,10 @@ for (const plugin of registry.plugins) {
 
   data.stars = 0;
   data.hearts = 0;
-
-  _pluginMap.set(plugin.slug, data);
+  data.downloads = 0;
+  
+  _pluginMap.set(data.slug, data);
 }
-
-await update();
 
 async function update() {
   if (Date.now() > _lastUpdate + 300000) {
@@ -28,11 +27,13 @@ async function update() {
 
       plugin.branch = result.defaultBranchRef.name;
       plugin.stars = result.stargazerCount;
-      plugin.updated_at = result.updatedAt;
+      plugin.downloads = 0;
 
-      if (plugin.readme !== false && !plugin.readme) {
+      if (plugin.readme !== false && plugin.updated_at == undefined) {
         plugin.readme = getReadmeRawUrl(plugin.repo, plugin.branch, plugin.readme);
       }
+
+      plugin.updated_at = result.updatedAt;
     }
   }
 }

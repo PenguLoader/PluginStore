@@ -1,15 +1,16 @@
 import { Show, createMemo } from "solid-js";
-import { createRouteData, useRouteData } from "solid-start";
+import { useRouteData } from "solid-start";
 import { TheThemeGrid } from "~/components/TheThemeGrid";
 import { ThePluginGrid } from "~/components/ThePluginGrid";
+import { createServerData$ } from "solid-start/server";
 
 export function routeData() {
-  return createRouteData(async () => {
+  return createServerData$(async () => {
     const { getAllPlugins } = await import('~/lib/plugins');
     return {
       plugins: await getAllPlugins()
     }
-  })
+  }, { deferStream: true });
 }
 
 export default function Home() {

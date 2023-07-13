@@ -6,10 +6,10 @@ export function Footer() {
       <div class="my-32 text-center">
         <h3 class="text-2xl mb-2">Don't see what you need?</h3>
         <p class="text-center">
-          👉 <a href="https://pengu.lol/guide/javascript-plugin" class="link">Create your own now</a>
+          👉 <a href="https://pengu.lol/guide/javascript-plugin" class="link" target="_blank">Create your own now</a>
         </p>
         <p class="text-center">
-          👍 <a href="https://github.com/PenguLoader/PluginStore" class="link">Publish your plugins</a>
+          👍 <a href="https://github.com/PenguLoader/PluginStore" class="link" target="_blank">Publish your plugins</a>
         </p>
       </div>
       <div class="flex md:justify-between justify-center items-center flex-col md:flex-row">
