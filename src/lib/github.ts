@@ -1,5 +1,6 @@
-const GH_PAT = process.env.GITHUB_PAT;
-const GH_GRAPH_API_URL = 'https://api.github.com/graphql';
+export const config = {
+  GH_PAT: ''
+};
 
 function parseRepoUrl(url: string, branch?: string) {
   url = url.replace(/^https\:\/\/github\.com\//i, '');
@@ -25,7 +26,7 @@ export function getReadmeRawUrl(repoUrl: string, branch?: string, readmeFile?: s
 
   if (readmeFile) {
     parts.push(readmeFile);
-  } else if (!/readme\.md/i.test(parts[parts.length - 1])) {
+  } else if (!/readme\.md$/i.test(parts[parts.length - 1])) {
     parts.push('README.md');
   }
 
@@ -104,11 +105,11 @@ export async function getRepositories(repoList: string[]) {
     `).join('\n')}
   }`;
 
-  const res = await fetch(GH_GRAPH_API_URL, {
+  const res = await fetch('https://api.github.com/graphql', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': `Bearer ${GH_PAT}`,
+      'Authorization': `Bearer ${config.GH_PAT}`,
     },
     body: JSON.stringify({ query }),
   });
